@@ -1,6 +1,13 @@
 # Environment Setup
 
-## .vimrc
+## Shorthand alias for kubectl
+
+```
+alias k=kubectl
+complete -F __start_kubectl k
+```
+
+## Modify .vimrc to edit YAML files more efficiently
 
 Create and edit the `~/.vimrc` file
 ```
