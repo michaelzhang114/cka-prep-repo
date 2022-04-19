@@ -179,3 +179,10 @@ kubeadm join 172.19.29.242:6443 --token napwnm.ttsqxi8by4h8bb6e --discovery-toke
 ```
 
 ![image](https://user-images.githubusercontent.com/31636398/163901288-a3d0465d-a49c-4144-9c4a-5c2d7e50f489.png)
+
+[Creating a cluster with Kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/)
+
+[High availability with Kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/high-availability/)
+
+[High availability considerations](https://github.com/kubernetes/kubeadm/blob/main/docs/ha-considerations.md#bootstrap-the-cluster)
+
