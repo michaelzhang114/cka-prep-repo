@@ -177,3 +177,5 @@ Remember to add `--apiserver-advertise-address={NODE IP}`
 ```
 kubeadm join 172.19.29.242:6443 --token napwnm.ttsqxi8by4h8bb6e --discovery-token-ca-cert-hash sha256:3c8da45b2e4ec7314701377354744a5c03b34d14b7d4dffe785322322b86d86d --control-plane --certificate-key 8022f488051fc00c9129fa8640350c0faeee8a44b43746b72a821c979a9dc9d5 --apiserver-advertise-address=172.19.21.151
 ```
+
+![image](https://user-images.githubusercontent.com/31636398/163901288-a3d0465d-a49c-4144-9c4a-5c2d7e50f489.png)
