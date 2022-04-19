@@ -16,3 +16,6 @@ multipass launch -n cp1 -c 2 -m 2G -d 20G
 multipass launch -n cp2 -c 2 -m 2G -d 20G
 multipass launch -n cp3 -c 2 -m 2G -d 20G
 ```
+
+![image](https://user-images.githubusercontent.com/31636398/163896780-cb54a8e2-5e37-4419-98f8-0d6c9e89c06a.png)
+
