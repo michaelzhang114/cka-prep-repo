@@ -49,3 +49,35 @@ EOF
 
 sysctl --system
 ```
+
+### Container runtime (containerd)
+
+```bash
+apt update
+apt-get install -y containerd
+```
+
+### kubeadm setup control plane
+`kubeadm init`
+
+`export KUBECONFIG=/etc/kubernetes/admin.conf`
+
+Create new token:
+`kubeadm token create --print-join-command`
+
+### Install Calico Network Plugin for Pod Networking
+
+`kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml`
+
+### Allow scheduling on master by removing taint
+
+`kubectl taint node vm1 node-role.kubernetes.io/master:NoSchedule-`
+
+## Install Kubernetes Metrics Server
+
+[Metrics server](https://github.com/kubernetes-sigs/metrics-server)
+
+```bash
+kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+```
+
