@@ -24,3 +24,12 @@ Understand that EPs are created
 ```
 kubectl get ep
 ```
+
+
+See everything
+```
+kubectl get all
+```
+
+- Different types of services
+- YAMLs vs commands
