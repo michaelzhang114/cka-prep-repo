@@ -49,6 +49,8 @@ kubectl get ep
 
 Relationship between svc, ep: https://stackoverflow.com/questions/52857825/what-is-an-endpoint-in-kubernetes#:~:text=An%20endpoint%20is%20an%20object%20that%20gets%20IP,order%20to%20be%20able%20to%20communicate%20with%20them.
 
+### ClusterIP
+
 With a ClusterIP service, you can access this within the cluster (pods in the cluster, nodes part of the cluster)
 
 Accessing the service from a pod
@@ -66,3 +68,31 @@ curl 10.98.159.255:80
 
 Accessing the service from outside the cluster (aka another machine) will not get a curl response.
 
+### NodePort
+
+Delete the previous ClusterIP service you just created
+```
+kubectl delete svc nginx
+```
+
+Expose a NodePort service
+```
+kubectl expose deploy nginx --type=NodePort --port=80
+kubectl get svc
+```
+
+Get the node IP
+```
+kubectl get nodes -o wide
+```
+
+Go to the node IP at the port of the service
+```
+curl 192.168.0.111:30841
+```
+
+### LoadBalancer
+
+## Deploy YAML files
+
+Deploy a sample deployment/svc YAML file and see how these can be created.
